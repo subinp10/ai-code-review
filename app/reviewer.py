@@ -3,7 +3,7 @@ import requests
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-MODEL = "llama3-70b-8192"  # Free on Groq
+MODEL = "llama-3.3-70b-versatile"  # Free on Groq
 
 SYSTEM_PROMPT = """You are an expert code reviewer. When given a Git diff (code changes from a pull request), analyze the changes and provide a structured review covering:
 
