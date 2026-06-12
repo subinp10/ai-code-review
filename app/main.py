@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 from fastapi import FastAPI, Request, HTTPException
 import hmac, hashlib, os
 from app.github_handler import get_pr_diff, post_review_comment
